@@ -7,12 +7,17 @@ print("Hello World!")
 """
 multi line comment test
 """
+
+#
+#variable test
+#
 print("Let's print vartest variable", vartest)
 
 #
 #multi line test
 #
-print("""
+print(
+"""
 Line
 test
 """

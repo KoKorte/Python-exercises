@@ -31,3 +31,6 @@ mylistA = ["Minä", "olen", "Niko"]
 
 print(mylistA)
 print(type(mylistA))
+
+mylistA[0] = "Hei"
+print(mylistA)

@@ -65,5 +65,13 @@ else:
 
 print("\n#################\n")
 #
+#range test
+#
+rangelist = [111,222,333,444,555,666,777,888,999]
+for index in range(0,len(rangelist),1):
+    print(rangelist[index], end=" ")
+
+print("\n#################\n")
+#
 #
 #

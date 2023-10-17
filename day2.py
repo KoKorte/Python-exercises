@@ -42,7 +42,10 @@ print("\n#################\n")
 #5: Kirjoita ohjelma, joka kysyy etunimen ja sukunimen ja kirjoittaa "nimesi on <etunimi> sukunimi>.
 #
 print("TASK 5.")
+name5a = input("Please, enter your firstname: ")
+name5b = input("Now enter your surname: ")
 
+print("Your name is: ", name5a , name5b)
 
 print("\n#################\n")
 #

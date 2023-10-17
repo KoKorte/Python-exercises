@@ -1,3 +1,5 @@
+import copy
+
 #variable for vartest
 vartest = 7
 print("#################\nSTART\n#################")
@@ -92,3 +94,15 @@ ccc = [2023]
 
 ddd = aaa + bbb + ccc
 print(ddd)
+
+print("\n#################\n")
+#
+#deepcopy test
+#
+testlistB = [1,2,3]
+testlistA = [4,5,6]
+
+testlistB = copy.deepcopy(testlistA)
+testlistA[0] = 420
+print(testlistA)
+print(testlistB)

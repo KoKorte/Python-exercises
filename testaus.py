@@ -84,5 +84,11 @@ else:
 
 print("\n#################\n")
 #
+#concatenate (list merge)
 #
-#
+aaa = [17]
+bbb = [10]
+ccc = [2023]
+
+ddd = aaa + bbb + ccc
+print(ddd)

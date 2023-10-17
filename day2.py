@@ -1,3 +1,42 @@
+"""
+PYTHON 102
+==========
+
+Tavoitteet:
+-Osaa tehdä ohjelman, joka lukee käyttäjän tekemän tekstin ja tulostaa sen näytölle
+-Ymmärtää mitä muuttujat ovat
+-Osaa yhdistää erilaisia merkkijonoja ja muuttujia
+
+Syöttö tapahtuu input komennolla
+
+tulos = input("Kirjoita jotain")
+print("Kirjoitit tekstin " + tulos)
+
+Muuttujan nimi voi olla periaatteessa mitä tahansa. Käytännössä sen pitää olla kuvaava.
+input komento voi käyttää samaa muuttujaa ja näin käyttää yhtä muuttujaa usean kerran.
+Muuttujaa voi käyttää monta kertaa ohjelmassa ja sille voi antaa uuden arvon.
+Muuttuja ja olemassa oleva merkiijonon yhdistäminen voidaan tehdä monta kertaa.
+
+Tehtävä 102-1: Kirjoita ohjelma, joka kysyy oman nimesi ja tulostaa sen.
+
+Tehtävä 102-2: Kirjoita ohjelma, joka kysyy oman nimesi kerran ja tulostaa sen kahdesti.
+
+Tehtävä 102-3: Kirjoita ohjelma, joka kysyy kaksi kertaa nimen ja tulostaa sitten annetun nimen.
+
+Tehtävä 102-4: Kirjoita ohjelma, joka kysyy nimen ja tulostaa jonkin erikoismerkin ja nimen ja toisen erikoismerkin.
+Esimerkiksi: !Aapeli@
+
+Ohjelmassa voi olla monta muuttujaa ja tulostuksessa voidaan käyttää useita muuttujia.
+
+Tehtävä 102-5: Kirjoita ohjelma, joka kysyy etunimen ja sukunimen ja kirjoittaa "nimesi on <etunimi> sukunimi>."
+
+Tehtävä 102-6: Kirjoita ohjelma, joka kysyy nimesi ja osoitteesi ja tulostaa sen kuten osoite kirjoitetaan kirjeessä
+
+BONUS
+=====
+
+Tehtävä 102-7: Kirjoita ohjelma, joka kysyy 2-3 asiaa ja tulostaa lyhyen muutaman rivin tarinan, jossa näitä asioita on käytetty.
+"""
 #Let's print "starting line" and add task number before every task
 print("\n#################\n")
 print("START")
@@ -69,4 +108,4 @@ q1 = input("Give me a name: ")
 q2 = input("Give me a verb: ")
 q3 = input("Give me a mood: ")
 
-print("Once upon a time, when",q1,"was",q2,"while being",q3)
+print("Once upon a time, when ",q1,"was",q2,"while being",q3)

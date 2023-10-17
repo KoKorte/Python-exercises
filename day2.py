@@ -1,3 +1,4 @@
+#Let's print "starting line" and add task number before every task
 print("\n#################\n")
 print("START")
 print("\n#################\n")
@@ -32,6 +33,9 @@ print("\n#################\n")
 #Esimerkiksi: !Aapeli@
 #
 print("TASK 4.")
+name4 = input("Please, enter your name: ")
+
+print("|"+name4+"|")
 
 print("\n#################\n")
 #
@@ -39,11 +43,13 @@ print("\n#################\n")
 #
 print("TASK 5.")
 
+
 print("\n#################\n")
 #
 #6: Kirjoita ohjelma, joka kysyy nimesi ja osoitteesi ja tulostaa sen kuten osoite kirjoitetaan kirjeessä.
 #
 print("TASK 6.")
+
 
 print("\n#################\n")
 #

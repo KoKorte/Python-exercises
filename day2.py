@@ -52,10 +52,21 @@ print("\n#################\n")
 #6: Kirjoita ohjelma, joka kysyy nimesi ja osoitteesi ja tulostaa sen kuten osoite kirjoitetaan kirjeessä.
 #
 print("TASK 6.")
+name6a = input("Please, enter the firstname: ")
+name6b = input("Now, enter the surname: ")
+address6a = input("Now, enter the address: ")
+postal6a = input("And the postal code: ")
+city6a = input("Last, the name of the city: ")
 
+print("The letter you want to send is set to following address: ", "\n",name6a, name6b,"\n",address6a,"\n",postal6a , city6a)
 
 print("\n#################\n")
 #
 #7: Kirjoita ohjelma, joka kysyy 2-3 asiaa ja tulostaa lyhyen muutaman rivin tarinan, jossa näitä asioita on käytetty.
 #
 print("BONUS TASK 7.")
+q1 = input("Give me a name: ")
+q2 = input("Give me a verb: ")
+q3 = input("Give me a mood: ")
+
+print("Once upon a time, when",q1,"was",q2,"while being",q3)

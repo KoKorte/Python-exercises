@@ -44,3 +44,13 @@ x - y =
 x * y =
 x / y =
 """
+#
+#1: Kirjoita ohjelma, joka tulostaa seuraavan f-merkkijonoilla
+#Hei olen etunimi sukunimi ja olen X-vuotias.
+#
+namea = input("Please, enter your name: ")
+nameb = input("Now, enter your surname: ")
+age = int(input("And your age: "))
+
+
+print(f"Hei olen {namea} {nameb} ja olen {age}-vuotias.")

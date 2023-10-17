@@ -58,3 +58,16 @@ age = int(input("And your age: "))
 
 
 print(f"Hei olen {namea} {nameb} ja olen {age}-vuotias.")
+
+print("\n#################\n")
+#
+#2: Kirjoita ohjelma, jossa on kaksi muuttujaa x = 123 ja y = 456
+#
+x = 123
+y = 456
+sum = x + y
+diff = x - y
+mul = x * y
+div = x / y
+
+print(f"\nx + y = {sum} \nx - y = {diff} \nx * y = {mul} \nx / y = {div}")

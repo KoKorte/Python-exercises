@@ -73,5 +73,16 @@ for index in range(0,len(rangelist),1):
 
 print("\n#################\n")
 #
+#while test
+#
+testnumber2 = 0
+while testnumber2 < 10:
+    testnumber2 += 2
+    print(testnumber2, end=" ")
+else:
+    print("while test end")
+
+print("\n#################\n")
+#
 #
 #

@@ -44,6 +44,10 @@ x - y =
 x * y =
 x / y =
 """
+#Let's print "starting line"
+print("\n#################\n")
+print("START")
+print("\n#################\n")
 #
 #1: Kirjoita ohjelma, joka tulostaa seuraavan f-merkkijonoilla
 #Hei olen etunimi sukunimi ja olen X-vuotias.

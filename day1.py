@@ -1,3 +1,66 @@
+"""
+PYTHON 101
+==========
+
+Tavoitteet:
+-Osaa tehdä ja ajaa omia Python-ohjelmia
+-Osaa tehdä ohjelman, joka tuottaa tekstiä näytölle
+-Osaa tehdä perus laskutehtäviä Python-ohjelmana
+
+
+Tulostus
+========
+
+Python toimii komennoilla, joista xeuraava kirjoittaa tietokoneen näyttöön
+
+print("Hello World!")
+
+
+Tehtävä 101-1: Kirjoita ohjelma, joka tulostaa oman nimesi.
+
+
+Komennot toteutetaan järjestyksessä ylhäältä alaspäin
+Kukin komento on itsenäinen
+
+Tehtävä 101-2: Kirjoita ohjelma, joka tulostaa seuraavat nimet aakkosjärjestyksessä:
+"Aarne", "Bertta", "Celsius", "Daavid"
+
+Tehtävä 101-3: Kirjoita ohjelma, jossa on nimi "Eemeli" viimeisenä ja "Aapeli" Aarnen jälkeen
+
+Tehtävä 101-4: Kirjoita ohjelma, joka kirjoittaa seuraavan riimin:
+
+Mä olen olen kotoisin
+Hyvinkään getosta.
+Jos joku muuta väittää
+se on petosta!
+
+Laskutehtävät
+=============
+
+Perusaritmetiikan merkit ovat + - / ja *
+
+print(1+2)
+print(1*2+3)
+
+Tehtävä 101-5: Kirjoita ohjelma, joka laskee vuoden tuntien lukumäärän
+
+Tehtävä 101-6: Kirjoita ohjelma, joka laskee vuoden minuuttien lukumäärän
+
+
+Bonus
+=====
+
+Tulostuksessa käytetään joko '' tai "" merkkejä. 
+Näitä merkkejä voi käyttää yhdessä, kunhan niiden keskinäinen sisäkkäinen järjestys on sama.
+
+Tehtävä 101-7: Kirjoita ohjelma, joka tulostaa
+
+Terve, nimeni on Simo 'Sapeli' Suomalainen!
+
+Tehtävä 101-8: Kirjoita ohjelma, joka tulostaa
+
+print("Hellow world!")
+"""
 #
 # Tehtävä 101-1: Kirjoita ohjelma, joka tulostaa oman nimesi.
 #

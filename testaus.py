@@ -103,6 +103,15 @@ testlistB = [1,2,3]
 testlistA = [4,5,6]
 
 testlistB = copy.deepcopy(testlistA)
-testlistA[0] = 420
+testlistA[0] = 111
 print(testlistA)
 print(testlistB)
+
+print("\n#################\n")
+#
+#looping dictionary
+#
+"""
+for key in mydictCCC:
+    print(key, mydictCCC[key])
+"""

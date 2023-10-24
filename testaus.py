@@ -115,3 +115,51 @@ print("\n#################\n")
 for key in mydictCCC:
     print(key, mydictCCC[key])
 """
+
+#
+#class test
+#
+class Eläin:
+    def __init__(self) -> None:
+        pass
+
+class Kokeilu:
+    def __init__(self) -> None:
+        pass
+
+    def testi(self):
+        print("Kokeilu")
+
+class Eläin (Kokeilu):
+    def __init__(self) -> None:
+        super().__init__()
+
+    def testi(self):
+        print("Eläin")
+
+class Auto (Kokeilu):
+    def __init__(self) -> None:
+        super().__init__()
+
+    def testi(self):
+        print("Auto")
+
+class Kissa (Eläin, Auto):
+    def __init__(self) -> None:
+        super().__init__()
+
+kissa = Kissa()
+kissa.testi()
+
+auto = Auto()
+auto.testi()
+
+kokeilu = Kokeilu()
+kokeilu.testi()
+
+eläin = Eläin()
+eläin.testi()
+
+lista = [kokeilu,eläin,kissa,auto]
+for i in lista:
+    i.testi()

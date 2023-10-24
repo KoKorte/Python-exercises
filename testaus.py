@@ -163,3 +163,24 @@ eläin.testi()
 lista = [kokeilu,eläin,kissa,auto]
 for i in lista:
     i.testi()
+
+#
+#class test 2
+#
+class ExampleA:
+    variableclass = 1234
+    variableinstance = 4567
+
+    def __init__(self, arg):
+        self.variableinstance = arg
+        ExampleA.variableclass = arg
+
+print(ExampleA.variableclass)
+
+ex1 = ExampleA(1111)
+ex2 = ExampleA(2222)
+print(ex1.variableclass, ex2.variableclass)
+print(ex1.variableinstance, ex2.variableinstance)
+ex2.variableinstance = 9999
+print(ex1.variableclass, ex2.variableclass)
+print(ex1.variableinstance, ex2.variableinstance)

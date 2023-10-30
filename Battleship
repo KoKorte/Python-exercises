@@ -104,17 +104,27 @@ def initializegame():
         randposition = random.randint(0,99)
         randdirection = random.randint(0,3)
         print(randposition, randdirection)
-        testlist = []
+        testrange: range
         match randdirection:
-            case 0:
-                testlist = range(randposition, randposition-ship.shipsize*10,-1)
-            case 1:
-                testlist = range(randposition, randposition+ship.shipsize,1)
-            case 2:
-                testlist = range(randposition, randposition+ship.shipsize*10,10)
-            case 3:
-                testlist = range(randposition, randposition-ship.shipsize,1)
-        print(testlist)
+            case 0: # ylös
+                testrange = range(randposition, randposition-ship.shipsize*10,-10)
+            case 1: # oikea
+                testrange = range(randposition, randposition+ship.shipsize,1)
+            case 2: # alas
+                testrange = range(randposition, randposition+ship.shipsize*10,10)
+            case 3: # vasen
+                testrange = range(randposition, randposition-ship.shipsize,-1)
+        print(testrange)
+
+        
+        for gridtested in testrange: 
+            if (mygrid[gridtested] != 0):
+                break
+        else:
+            print("Testi")
+
+
+
 #        if randdirection == 0:
 #            # 1 ehto, cannot go over the border
 #            if (randposition - ship.shipsize * 10) < 0:
@@ -163,5 +173,4 @@ drawMap()
 print(mygrid[6].position)
 print(mygrid[6].content)
 print(mygrid[6].showGridItem())
-"""
 """

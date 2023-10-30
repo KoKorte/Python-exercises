@@ -1,0 +1,23 @@
+# BATTLESHIP PLAN
+# 
+# WHAT WE NEED?
+# 5 ships (sizes 5, 4, 3, 3 and 2
+# self grid
+# enemy grid
+# each grid is made of 100 grid items
+# determine grid item does following:
+# my grid:
+# show sea, show ship type, show damage 
+# enemy grid:
+# show sea, show misses, show hits, show ship type after it has been sunk
+# Carrier A 
+# Battleship B
+# Cruiser C
+# Submarine D
+# Destroyer E
+#
+#
+# MODEL:
+"""
+
+"""

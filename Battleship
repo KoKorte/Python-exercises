@@ -19,5 +19,149 @@
 #
 # MODEL:
 """
+# importataan random kirjasto
+import random
 
+class GridItem:
+    def __init__(self, position: int) -> None:
+        self.content = 0
+        self.position = position
+        self.topborder = self.rightborder = self.botborder = self.leftborder = -1
+        if position < 10:
+            self.topborder = -1
+            self.botborder = position + 10
+        if position >= 90:
+            self.topborder = position - 10
+            self.botborder = -1
+        if position % 10 == 0:
+            self.rightborder = position + 1
+            self.leftborder = -1
+        if position % 10 == 9:
+            self.leftborder = position - 1
+            self.rightborder = -1
+
+    def showGridItem(self):
+        match self.content:
+            case 0: # sea
+                return "."
+            case 1: # miss
+                return "X"
+            case 11: # Lentotukialus
+                return "A"
+            case 12: # Sota-alus
+                return "B"
+            case 13: # Risteilijä
+                return "C"
+            case 14: #Sukellusvene
+                return "D"
+            case 15: # Tuhoaja
+                return "E" 
+            case _: # error case?
+                return "?"
+
+# ships plan
+# shipsize (lenght)
+# shiptype: 11-15
+
+class Ship:
+    def __init__(self, shiptype: int, shipsize: int) -> None:
+        self.shipsize = shipsize
+        self.shiptype = shiptype
+
+
+mygrid: list = []
+enemygrid: list = []
+shiplist: list = []
+
+# This function is called whenever game is initialized
+def initializegame():
+    global mygrid, enemygrid, shiplist
+
+
+    #create empty mygrid
+    for x in range(100):
+        mygrid.append(GridItem(x))
+
+    # Position for my ships
+    # rule 1: biggest ship first
+    # rule 2. ships cannot be overlapped
+
+    carrier = Ship(11,5)    # lentotukialus
+    battleship = Ship(12,4) # sotalaiva
+    cruiser = Ship(13,3)    # risteilijä
+    submarine = Ship(14,3)  # sukellusvene
+    destroyer = Ship(15,2)  # tuhoaja
+    shiplist.append(carrier)
+    shiplist.append(battleship)
+    shiplist.append(cruiser)
+    shiplist.append(submarine)
+    shiplist.append(destroyer)
+
+
+    # choose random position and direction form "anchor point"
+    # test if possible
+    for ship in shiplist:
+        randposition = random.randint(0,99)
+        randdirection = random.randint(0,3)
+        print(randposition, randdirection)
+        testlist = []
+        match randdirection:
+            case 0:
+                testlist = range(randposition, randposition-ship.shipsize*10,-1)
+            case 1:
+                testlist = range(randposition, randposition+ship.shipsize,1)
+            case 2:
+                testlist = range(randposition, randposition+ship.shipsize*10,10)
+            case 3:
+                testlist = range(randposition, randposition-ship.shipsize,1)
+        print(testlist)
+#        if randdirection == 0:
+#            # 1 ehto, cannot go over the border
+#            if (randposition - ship.shipsize * 10) < 0:
+#                pass
+#            # 2 ehto,  salliiko ruudukko
+#            #       
+#        pass
+
+
+    # if possible, place ship
+
+
+    # Position for enemy ships
+
+    # Create empty enemygrid
+    for x in range(100):
+        enemygrid.append(GridItem(x))
+
+def drawMap():
+    #draw header
+    print(" "*5, "MY GRID", " "*15, "ENEMY GRID")
+    print(" "*3, end="")
+    for column in "ABCDEFGHIJ":
+        print(column, ""*2, end="")
+    print(" "*3,end="")
+    for column in "ABCDEFGHIJ":
+        print(column, ""*2, end="")
+    print()
+    #draw maps
+    for row in range(10):
+        if row == 9:
+            print(row+1,"",end="")
+        else:
+            print(row+1," ",end="")
+        for row in range(10):
+            print(mygrid[row].showGridItem(), end=" ")
+        print("|", end="  ")
+        for row in range(10):
+            print(enemygrid[row].showGridItem(), end=" ")
+        print()
+
+initializegame()
+drawMap()
+
+"""
+print(mygrid[6].position)
+print(mygrid[6].content)
+print(mygrid[6].showGridItem())
+"""
 """
